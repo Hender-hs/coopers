@@ -20,10 +20,10 @@ export const Img = styled.img `
 `
 
 export const ImgDesktop = styled.img `
-	width: 100vw;
 	display: none;
 
 	@media (min-width: 768px) {
+		width: 99.5vw;
 		display: unset;
 	}
 `
@@ -32,7 +32,7 @@ export const DivInfo = styled.div `
 	position: relative;
 	bottom: -170px;
 
-	width: 100vw;
+	width: 100%;
 	height: 130px;
 
 	display: flex;

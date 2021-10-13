@@ -17,7 +17,7 @@ export const Footer = () => {
 				</div>
 				<S.BottomFooterImg src={BottomFooter} />
 				<S.BottomFooterImgDesktop src={BottomFooterDesktop} />
-			</S.DivInfo>
+			</S.DivInfo> 
 			<S.Img src={FooterSVG} />
 			<S.ImgDesktop src={FooterSVGDesktop} />
 		</S.Footer>
