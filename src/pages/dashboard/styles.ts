@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const BodyPage = styled.div `
-	width: 98vw;
+	width: 99vw;
 	height: 440vh;
 
 	display: flex;
