@@ -20,6 +20,7 @@ export const GlobalStyle = createGlobalStyle `
 		font-size: 100%;
 		font: inherit;
 		vertical-align: baseline;
+		scroll-behavior: smooth;
 	}
 	article, aside, details, figcaption, figure, 
 	footer, header, hgroup, menu, nav, section {
