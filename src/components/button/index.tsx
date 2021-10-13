@@ -8,6 +8,6 @@ interface ButtonProps {
 export const Button = ({ children }: ButtonProps) => {
 
 	return (
-		<S.StyledButton><a href='#to-do-box'>{children}</a></S.StyledButton>
+		<a href='#to-do-box'><S.StyledButton>{children}</S.StyledButton></a>
 	)
 }
