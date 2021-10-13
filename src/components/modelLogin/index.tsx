@@ -14,17 +14,23 @@ export const LoginModel = ({makeLogin}: LoginModelProps) => {
 
 		return (
 				<S.AuthModal>
-					<div className='login-box' >
+					<S.LoginBox>
 						<div>
-							<img src={ImgModal1} />
-							<img src={ImgModal2Title} />
+							<S.Img1 src={ImgModal1} alt='ilustration1' />
+							<S.Img2 src={ImgModal2Title} alt='ilustration2' />
 						</div>
-						<div className='input-area' >
-							<input onChange={(event) => setUserLogin(event.target.value)} />
-							<input onChange={(event) => setPasswordLogin(event.target.value)} />
-							<button onClick={() => makeLogin(userLogin, passwordLogin)} >Log-In</button>
-						</div>
-					</div>
+						<S.inputArea >
+							<S.DivInputs>
+								<S.Label>User: </S.Label>
+								<S.Input onChange={(event) => setUserLogin(event.target.value)} />
+							</S.DivInputs>
+							<S.DivInputs>
+								<S.Label>Password: </S.Label>
+								<S.Input onChange={(event) => setPasswordLogin(event.target.value)} />
+							</S.DivInputs>
+							<S.ButtonLogin onClick={() => makeLogin(userLogin, passwordLogin)} >Log-In</S.ButtonLogin>
+						</S.inputArea>
+					</S.LoginBox>
 				</S.AuthModal>
 		)
 }
