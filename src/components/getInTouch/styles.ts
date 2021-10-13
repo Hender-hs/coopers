@@ -168,7 +168,7 @@ export const ImgLogo = styled.img `
 
 export const Img = styled.img `
 	position: relative;
-	top: -95px;
+	top: -115px;
 
 	z-index: 1;
 
@@ -181,7 +181,7 @@ export const Img = styled.img `
 
 export const Graphism = styled.img `
 	position: relative;
-	bottom: 175px;
+	bottom: 190px;
 	right: 50px;
 
 	z-index: 0;
