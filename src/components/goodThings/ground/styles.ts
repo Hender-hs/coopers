@@ -9,6 +9,8 @@ export const GoodThingsSection = styled.div `
 
 	padding: 0 30px;
 
+	overflow-x: hidden;
+
 	border-radius: 10px;
 
 	display: flex;
@@ -26,6 +28,8 @@ export const GoodThingsSection = styled.div `
 	@media (min-width: 768px) {
 		width: 1080px;
 		height: 520px;
+
+		overflow-x: unset;
 
 		.title {
 			position: relative;

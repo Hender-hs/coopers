@@ -29,7 +29,7 @@ export const Img = styled.img `
 
 export const BottomSide = styled.div `
 	width: 100%;
-	height: 55%;
+	height: 45%;
 
 	display: flex;
 	flex-direction: column;
@@ -72,4 +72,13 @@ export const H5 = styled.h5 `
 	font-weight: 700;
 
 	cursor: pointer;
+`
+
+export const DivCoopersLogo = styled.img `
+	position: relative;
+	bottom: 25px;
+	left: 120px;
+
+	height: 50px;
+	/* width: auto; */
 `
