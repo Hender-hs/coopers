@@ -26,6 +26,24 @@ export const DivGetInTouch = styled.div `
 
 export const ButtonLogOut = styled.button `
 	position: absolute;
-	right: 10px;
-	top: 20px;
+	right: 20px;
+	top: 15px;
+
+	width: 120px;
+	height: 40px;
+
+	background-color: #000;
+
+	font-size: 14px;
+	font-family: 'Poppins', sans-serif;
+
+	border: none;
+
+	color: #fff;
+
+	cursor: pointer;
+
+	@media (min-width: 768px) {
+		top: 25px;
+	}
 `
