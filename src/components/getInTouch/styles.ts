@@ -38,7 +38,7 @@ export const ContactInputsSection = styled.div `
 	justify-content: space-evenly;
 	align-items: center;
 
-	padding: 0 0 50px 15px;
+	padding: 0 0 20px 15px;
 
 	@media (min-width: 768px) {
 		width: 90%;
@@ -141,20 +141,22 @@ export const Button = styled.button `
 	text-transform: uppercase;
 	cursor: pointer;
 
+
 	@media (min-width: 768px) {
 		width: 628.43px;
 		height: 60px;
 		font-size: 18px;
 		font-weight: 500;
-	}
+		margin-bottom: 40px;
+}
 `
 
 export const ImgLogo = styled.img `
 	position: relative;
 	top: 110px;
-	right: 120px;
+	right: 90px;
 
-	width: 100px;
+	width: 150px;
 
 	@media (min-width: 768px) {
 		top: 150px;
@@ -166,14 +168,30 @@ export const ImgLogo = styled.img `
 
 export const Img = styled.img `
 	position: relative;
-	top: -60px;
+	top: -95px;
+
+	z-index: 1;
 
 	@media (min-width: 768px) {
-		top: -130px;
+		top: -140px;
 
 		width: 178.43px;
 	}
 `
+
+export const Graphism = styled.img `
+	position: relative;
+	bottom: 175px;
+	right: 50px;
+
+	z-index: 0;
+
+	@media (min-width: 768px) {
+		bottom: 240px;
+		right: 80px;
+	}
+`
+
 
 export const BoxSendingStatus = styled.div<SendingEmailStatus> `
   position: fixed;

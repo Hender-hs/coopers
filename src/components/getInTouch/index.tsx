@@ -2,7 +2,7 @@ import * as S 									from './styles'
 import Image 										from '../../assets/imageSendAmsg.png'
 import Logo 										from '../../assets/send_a_msg_log.svg'
 import { useState, useEffect } 	from 'react'
-
+import GraphismRetangle from '../../assets/graphismGetInTouch.svg'
 
 export const GetInTouch = () => {
 
@@ -57,6 +57,7 @@ export const GetInTouch = () => {
 		<S.Card>
 			<S.ImgLogo src={Logo} />
 			<S.Img src={Image} />
+			<S.Graphism src={GraphismRetangle} />
 
 			<S.ContactInputsSection>
 				
