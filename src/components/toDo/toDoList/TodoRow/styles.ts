@@ -16,6 +16,9 @@ export const DivIcon = styled.div `
 	display: flex;
 	justify-content: flex-start;
 
+	img {
+		cursor: pointer;
+	}
 `
 
 export const TaskText = styled.div `
