@@ -47,6 +47,8 @@ export const Header = styled.header `
 
 		justify-content: unset;
 		
+		margin: 10px;
+
 		.name-logo {
 			margin-top: 50px;
 		}
