@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled 						from 'styled-components'
 import * as TodoRowStyles from '../../toDoList/TodoRow/styles'
 
 export const CompletedTaskRow = styled(TodoRowStyles.TaskRow) ``

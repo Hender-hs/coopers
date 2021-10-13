@@ -1,7 +1,7 @@
-import { useState } from 'react'
+import { useState } 	from 'react'
 import UncompleteTask from '../../../../assets/EllipseTodo2.svg'
-import { useTasks } from '../../../../provider/tasks'
-import * as S from './styles'
+import { useTasks } 	from '../../../../provider/tasks'
+import * as S 				from './styles'
 
 interface ToDoRowProps {
 	'children': string,

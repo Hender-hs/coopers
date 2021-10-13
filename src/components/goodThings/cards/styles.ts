@@ -5,7 +5,6 @@ export const Card = styled.div `
 	width: 340px;
 	height: 430px;
 
-	/* box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.05), 0px 1px 10px rgba(0, 0, 0, 0.08), 0px 2px 4px rgba(0, 0, 0, 0.14); */
 	filter: drop-shadow(8px 8px 24px rgba(12, 41, 208, 0.16));
 
 	border-radius: 10px;

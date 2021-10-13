@@ -1,20 +1,28 @@
-import { TodoRow } from './TodoRow'
-import * as S from './styles'
-import AddNewTask from '../../../assets/EllipseTodo1.svg'
-import { useTasks } from '../../../provider/tasks'
-import { useEffect, useState } from 'react'
+import { TodoRow } 							from './TodoRow'
+import * as S 									from './styles'
+import AddNewTask 							from '../../../assets/EllipseTodo1.svg'
+import { useTasks } 						from '../../../provider/tasks'
+import { useState } 						from 'react'
+
+interface Tasks {
+	'description': string,
+	'id': number,
+	'completed': boolean
+}
 
 
 export const TodoList = () => {
 
-	const {tasks, addTask, eraseAllTasks} = useTasks()
-
-	const [showAddTaskInput, setShowAddTaskInput] = useState<boolean>(false)
-
+	const {tasks, addTask, eraseAllTasks} 					= useTasks()
+	const [showAddTaskInput, setShowAddTaskInput] 	= useState<boolean>(false)
 	const [addTaskInputValue, setAddTaskInputValue] = useState<string>('')
 
-	useEffect(() => console.log(showAddTaskInput), [showAddTaskInput])
 
+	const JSXRenderToDoTaks = ({id, description, completed}: Tasks) => {
+		return !completed && <TodoRow id={id}>{description}</TodoRow>
+	}
+
+	
 	return (
 		<S.Card>
 			<S.TopBorder />
@@ -43,7 +51,7 @@ export const TodoList = () => {
 						</div>
 					}
 				</S.DivAddNewTask>
-				{tasks.map(({id, description, completed}) => !completed && <TodoRow id={id}>{description}</TodoRow>)}
+				{tasks.map(JSXRenderToDoTaks)}
 			</S.TasksList>
 			<S.ButtonErase onClick={() => eraseAllTasks('todo')}>erase all</S.ButtonErase>
 		</S.Card>

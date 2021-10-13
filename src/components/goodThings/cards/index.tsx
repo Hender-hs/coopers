@@ -9,7 +9,6 @@ interface Props {
 
 export const GoodThingsCard = ({props: {description, imgPath}}: Props) => {
 	
-
 	return (
 		<S.Card>
 			<S.Img src={imgPath} />

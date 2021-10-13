@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import CompleteTask from '../../../../assets/EllipseDone.svg'
 import { useTasks } from '../../../../provider/tasks'
-import * as S from './styles'
+import * as S 			from './styles'
 
 interface DoneRowProps {
 	'children': string,

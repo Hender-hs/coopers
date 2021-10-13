@@ -1,5 +1,5 @@
-import * as S from './styles'
-import TodoBandSVG from '../../assets/TodoBand.svg'
+import * as S 						from './styles'
+import TodoBandSVG 				from '../../assets/TodoBand.svg'
 import TodoBandDesktopSVG from '../../assets/TodoBandDesktop.svg'
 
 export const TodoBand = () => {
