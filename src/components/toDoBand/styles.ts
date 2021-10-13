@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const DivBand = styled.div `
 	height: 300px;
 	font-family: 'Poppins', sans-serif;
-	
+
 	@media (min-width: 768px) {
 		height: 30vw;
 		margin-top: 300px;
@@ -11,7 +11,7 @@ export const DivBand = styled.div `
 `
 
 export const SVGBandImg = styled.img `
-	width: 100vw;
+	max-width: 100vw;
 
 	@media (min-width: 768px) {
 		display: none;
@@ -22,7 +22,7 @@ export const SVGBandImgDesktop = styled.img `
 	display: none;
 
 	@media (min-width: 768px) {
-		width: 100vw;
+		width: 99.5vw;
 		display: unset;
 	}
 `
